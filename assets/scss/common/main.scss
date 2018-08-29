@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Georgia-Regular;
+  src: url("../../font/Georgia-Regular.ttf");
+}
+@font-face {
+  font-family: Georgia-Bold;
+  src: url("../../font/Georgia-bold.ttf");
+}
+@font-face {
+  font-family: PFDin-Regular;
+  src: url("../../font/pfdintextcondpro-regular.ttf");
+}
+@font-face {
+  font-family: PFDin-Bold;
+  src: url("../../font/pfdintextcondpro-bold.ttf");
+}
+
+
+html, body, div, span, p, header, footer, section, h1, h2, h3, h4, h5, h6, ul, li, form, input, textarea, button, ol  {
+    font-family: Georgia-Regular , Georgia-Bold , PFDin-Regular ,PFDin-Bold;
+    color: $dark-grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+    position: relative;
+}
+body{
+  background: #FCFCFC;
+}
+a , a:hover ,a:focus{
+  text-decoration: none;
+  outline: none;
+}
+.disable-scroll {
+    overflow: hidden;
+    max-height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+.align-center{
+  text-align: center;
+}
+.align-right{
+  text-align: right;
+}
+.align-left{
+  text-align: left;
+}
+.main__btn{
+  font-family: PFDin-Bold;
+  background: #FEB101;
+  border: 1px solid #FEB101;
+  border-radius: 30px;
+  width: 100%;
+  display: inline-block;
+  padding: 13px 0 11px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  &:hover{
+    border: 1px solid #FEB101;
+    background: #fff;
+    color: #FEB101;
+    box-shadow: 0px 0px 55px rgba(247, 176, 68, 0.5);
+  }
+}
+
+.scroll-down-wrp{
+  position: absolute;
+  // display: inline-block;
+  left: 20px;
+  bottom: -10px;
+  max-width: 1140px;
+  z-index: 99;
+}
+
+.scroll-down {
+  font-family: Georgia-Regular;
+  position: absolute;
+  display: block;
+  transform: rotate(-90deg);
+  min-width: 262px;
+  line-height: normal;
+  font-size: 12px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: #000;
+  &:hover{
+    color: #000000;
+  }
+}
+.scroll-down img{
+  padding-right: 15px;
+}
+
+
