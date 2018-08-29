@@ -39,28 +39,28 @@
     animation-delay: 1s;
 }
 .menu-animation-fs-eko{
-    -webkit-animation-duration: 3.2s;
-    -o-animation-duration: 3.2s;
-    animation-duration: 3.2s;
-    -webkit-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
 }
 .menu-animation-fs-title{
+    -webkit-animation-duration: 2.4s;
+    -o-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.menu-animation-fs-text{
     -webkit-animation-duration: 3.4s;
     -o-animation-duration: 3.4s;
     animation-duration: 3.4s;
-    -webkit-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
-}
-.menu-animation-fs-text{
-    -webkit-animation-duration: 3.6s;
-    -o-animation-duration: 3.6s;
-    animation-duration: 3.6s;
-    -webkit-animation-delay: 3.2s;
-    -o-animation-delay: 3.2s;
-    animation-delay: 3.2s;
+    -webkit-animation-delay: 1.8s;
+    -o-animation-delay: 1.8s;
+    animation-delay: 1.8s;
 }
 .menu-animation-fs-button{
     -webkit-animation-duration: 3.8s;
@@ -81,6 +81,7 @@
   -webkit-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
 }
+
 
 
 .menu-animation-fs-left{
