@@ -94,7 +94,6 @@ $(document).ready(function(){
 
     direction: 'vertical',
     
-
     pagination: {
       el: '.swiper-pagination',
       dynamicBullets: true,
@@ -110,13 +109,36 @@ $(document).ready(function(){
     },
 
   }) 
-  // var swiper = new Swiper('.swiper-container', {
-  //   direction: 'vertical',
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
-  //   },
-  // });
+
+  var galleryTop = new Swiper('.gallery-top', {
+    direction: 'vertical',
+    autoHeight: true,
+    navigation: {
+      nextEl: '.gallery-top-next',
+      prevEl: '.gallery-top-prev',
+    },
+  });
+
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    direction: 'vertical',
+    slidesPerView: 4,
+    touchRatio: 0.2,
+    slideToClickedSlide: true,
+    navigation: {
+      nextEl: '.gallery-thumb-next',
+    },
+  });
+
+  galleryTop.controller.control = galleryThumbs;
+  galleryThumbs.controller.control = galleryTop;
+
+  $('.single-text__read-more').readmore({
+    collapsedHeight: 41,
+    speed: 350,
+    moreLink: '<div class="single-text__more"><img src="build/images/single/more.svg" alt=""></div>',
+    lessLink: '<div class="single-text__less"><img src="build/images/single/less.svg" alt=""></div>'
+  });
+
   /*----animate-----*/
 });
 

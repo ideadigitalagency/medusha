@@ -1,0 +1,214 @@
+.main-first-screen_autoheight{
+    height: auto;
+    padding-bottom: 35px;
+    margin-bottom: 12px;
+}
+.gallery-top{
+    width: 100%;
+    height: 600px;
+}
+.gallery-top .swiper-slide {
+    width: 100%;
+    height: 600px;
+    padding: 0;
+}
+.gallery-top-prev , .gallery-top-next{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 75px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.gallery-top-prev{
+    right: 75px;
+}
+.gallery-thumbs{
+    height: 315px;
+    padding-bottom: 30px;
+    margin-top: -10px;
+}
+.gallery-thumbs .swiper-slide {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.gallery-thumbs-img{
+    width: 70px;
+}
+.gallery-thumb-next {
+    transform: rotate(90deg);
+    position: absolute;
+    right: 27px;
+    bottom: -28px;
+    z-index: 9;
+    background-color: #fff;
+    width: 40px;
+    height: 75px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.charac-b2b__title {
+    font-family: PFDin-Bold;
+    line-height: normal;
+    font-size: 45px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+.charac-b2b__title_padd{
+    padding-bottom: 50px;
+}
+.charac-b2b__sec-title {
+    font-family: PFDin-Bold;
+    line-height: 33px;
+    font-size: 25px;
+    color: #4F4F4F;
+}
+.charac-b2b__sec-title_padd{
+    padding-bottom: 34px;
+}
+.charac-b2b__param-name {
+    font-family: PFDin-Bold;
+    line-height: 26px;
+    font-size: 20px; 
+    color: #6E6E6E;
+}
+.charac-b2b__param-name_padd{
+    padding-bottom: 12px;
+}
+.charac-b2b__param-list_padd{
+    padding-bottom: 50px;
+}
+.charac-b2b__param-item{
+    font-family: Georgia-Regular;
+    line-height: 20px;
+    font-size: 16px;
+    color: #8D8F8D;
+    display: inline-block;
+}
+.charac-b2b__param-item_padd{
+    padding-right: 30px;
+}
+.single-title{
+    font-family: PFDin-Bold;
+    line-height: 33px;
+    font-size: 25px;
+    color: #4F4F4F;
+}
+.single-text {
+    font-family: Georgia-Regular;
+    line-height: 22px;
+    font-size: 16px;
+    color: #8D8F8D;
+}
+.single-text_padd{
+    padding-top: 19px;
+    padding-bottom: 57px;
+}
+.single-more-prodcut-wrp_padd{
+    padding-top: 40px;
+    padding-bottom: 78px;
+}
+.more-prodcut__img{
+    display: inline-block;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+}
+.more-prodcut__img:hover{
+    transform: scale(1.4);
+    z-index: 9;
+}
+.more-prodcut__img_wrp{
+    padding-right: 11px;
+}
+.more-prodcut__name{
+    font-family: PFDin-Bold;
+    line-height: 21px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #646464;
+}
+.more-prodcut__name_padd{
+    padding-top: 35px;
+    padding-bottom: 12px;
+}
+.more-prodcut__number{
+    font-family: PFDin-Regular;
+    line-height: 33px;
+    font-size: 25px;
+    color: #F7B044;
+}
+
+.single-text__link{
+    width: 230px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.same-product_padd{
+    padding: 145px 0 160px;
+}
+
+.same-product__title{
+    font-family: PFDin-Bold;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+.same-product__title_padd{
+    padding-bottom: 54px;
+}
+.same-product-wrp{
+    display: inline-block;
+}
+.same-product__img{
+    position: relative;
+    max-width: 185px;
+    max-height: 175;
+    overflow: hidden;
+}
+.same-product__img-bg{
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+}
+.same-product__img_padd{
+    padding-bottom: 10px;
+}
+.same-product__item-title{
+    font-family: PFDin-Bold;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #444444;
+    text-align: center;
+}
+.same-product-wrp:hover{
+    .same-product__img-bg{
+        opacity: 1;
+    }
+}

@@ -76,7 +76,9 @@ a , a:hover ,a:focus{
   }
 }
 
-
+.overflow-hidden{
+  overflow: hidden;
+}
 .scroll-down-wrp{
   position: absolute;
   left: 20px;
