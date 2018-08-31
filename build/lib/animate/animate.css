@@ -3387,3 +3387,83 @@ Copyright (c) 2015 Daniel Eden
 	-webkit-animation-name: slideOutUp;
 	animation-name: slideOutUp;
 }
+
+
+  @keyframes bee{
+	0% {
+	  transform:  translate(250px,-199px)  ;
+	}
+	9% {
+	  transform:  translate(239px,-160px)  ;
+	}
+	17% {
+	  transform:  translate(226px,-122px)  ;
+	}
+	26% {
+	  transform:  translate(202px,-63px)  ;
+	}
+	34% {
+	  transform:  translate(165px,-2px)  ;
+	}
+	42% {
+	  transform:  translate(110px,33px)  ;
+	}
+	50% {
+	  transform:  translate(63px,27px)  ;
+	}
+	59% {
+	  transform:  translate(25px,19px)  ;
+	}
+	67% {
+	  transform:  translate(1px,0px)  ;
+	}
+	100% {
+	  transform:  translate(1px,0px)  ;
+	}
+  }
+  
+  
+  @-webkit-keyframes bee {
+	0% {
+	  -webkit-transform:  translate(250px,-199px)  ;
+	}
+	9% {
+	  -webkit-transform:  translate(239px,-160px)  ;
+	}
+	17% {
+	  -webkit-transform:  translate(226px,-122px)  ;
+	}
+	26% {
+	  -webkit-transform:  translate(202px,-63px)  ;
+	}
+	34% {
+	  -webkit-transform:  translate(165px,-2px)  ;
+	}
+	42% {
+	  -webkit-transform:  translate(110px,33px)  ;
+	}
+	50% {
+	  -webkit-transform:  translate(63px,27px)  ;
+	}
+	59% {
+	  -webkit-transform:  translate(25px,19px)  ;
+	}
+	67% {
+	  -webkit-transform:  translate(20px,10px)  ;
+	}
+	100% {
+	  -webkit-transform:  translate(0px,0px)  ;
+	}
+  }
+  
+  .bee{
+	animation: bee linear 6s;
+	animation-iteration-count: 1;
+	transform-origin: 50% 50%;
+	/* animation-fill-mode:forwards; when the spec is finished */
+	-webkit-animation: bee linear 6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  }
+  
