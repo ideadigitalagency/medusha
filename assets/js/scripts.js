@@ -55,6 +55,10 @@ $(document).ready(function(){
   $(".menu-animation-fs-text").animated( "fadeInLeft");
   $(".menu-animation-fs-button").animated( "fadeInLeft");
   $(".menu-animation-fs-right").animated( "fadeInRight");
+  $(".menu-animation-fs-eko_r").animated( "fadeInRight");
+  $(".menu-animation-fs-title_r").animated( "fadeInRight");
+  $(".menu-animation-fs-text_r").animated( "fadeInRight");
+  $(".menu-animation-fs-button_r").animated( "fadeInRight");
 
   $(".scroll-animation").animated( "fadeInDown");
 
@@ -73,6 +77,46 @@ $(document).ready(function(){
   $(".form-fade").animated( "fadeIn");
   $(".form-decore-fade-bee").animated( "fadeIn");
   $(".form-decore-bg-right-fade").animated( "fadeIn");
+
+  $(".product-fade").animated( "fadeIn");
+
+
+  $(".blog-item-fade-1").animated( "fadeIn");
+  $(".blog-item-fade-2").animated( "fadeIn");
+  $(".blog-item-fade-3").animated( "fadeIn");
+  $(".blog-item-fade-4").animated( "fadeIn");
+
+  $(".bee-animation").animated( "bee");
+
+
+
+  var swiper = new Swiper('.swiper-container', {
+
+    direction: 'vertical',
+    
+
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+      dynamicMainBullets: 1,
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">0' + (index + 1) + '</span>';
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  }) 
+  // var swiper = new Swiper('.swiper-container', {
+  //   direction: 'vertical',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
+  // });
   /*----animate-----*/
 });
 

@@ -30,7 +30,7 @@ html, body, div, span, p, header, footer, section, h1, h2, h3, h4, h5, h6, ul, l
     position: relative;
 }
 body{
-  background: #FCFCFC;
+  background: #fff;
 }
 a , a:hover ,a:focus{
   text-decoration: none;
@@ -76,19 +76,22 @@ a , a:hover ,a:focus{
   }
 }
 
+
 .scroll-down-wrp{
   position: absolute;
-  // display: inline-block;
   left: 20px;
-  bottom: -10px;
-  max-width: 1140px;
-  z-index: 99;
+  bottom: -80px;
+  z-index: 999;
 }
-
+.scroll-down-wrp_r{
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  z-index: 999;
+}
 .scroll-down {
   font-family: Georgia-Regular;
-  position: absolute;
-  display: block;
+  display: inline-block;
   transform: rotate(-90deg);
   min-width: 262px;
   line-height: normal;
@@ -96,6 +99,7 @@ a , a:hover ,a:focus{
   letter-spacing: .25em;
   text-transform: uppercase;
   color: #000;
+  width: 100%;
   &:hover{
     color: #000000;
   }
