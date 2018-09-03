@@ -394,7 +394,20 @@
   color: #333333;
   display: inline-block;
   letter-spacing: 0.1em;
-  
+}
+.product-item__choise-title span{
+  font-family: PFDin-Regular;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid transparent;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+}
+.product-item__choise-title:hover span{
+  border-bottom: 1px solid #FEB101;
 }
 .product-item__choise-title_padd{
   padding: 15px 0;
@@ -412,6 +425,12 @@
 }
 .product-item__choise-wrp:hover {
   opacity: 1;
+}
+.product-item__choise-wrp .product-item__choise:hover  .product-item__choise-title span{
+  border-bottom: 1px solid #FEB101;
+}
+.product-item__choise-wrp .product-item__choise-two:hover  .product-item__choise-title span{
+  border-bottom: 1px solid #FEB101;
 }
 .product-bg_decore{
   position: absolute;

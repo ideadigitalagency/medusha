@@ -60,7 +60,7 @@ $(document).ready(function(){
   $(".menu-animation-fs-text_r").animated( "fadeInRight");
   $(".menu-animation-fs-button_r").animated( "fadeInRight");
 
-  $(".scroll-animation").animated( "fadeInDown");
+  $(".scroll-animation").animated( "bounce");
 
 
   $(".main-slider-left").animated( "fadeInLeft");
