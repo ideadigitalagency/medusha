@@ -88,7 +88,7 @@
     padding-bottom: 12px;
 }
 .charac-b2b__param-list_padd{
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 }
 .charac-b2b__param-item{
     font-family: Georgia-Regular;
@@ -211,4 +211,36 @@
     .same-product__img-bg{
         opacity: 1;
     }
+}
+
+.charac-b2b-select{
+    font-family: Georgia-Regular;
+    background-color: #fff;
+    border: 1px solid #777777;
+    line-height: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 4px 20px 7px 7px !important;
+    min-width: 55px;
+    height: 32px;
+    border-radius: 3px;
+}
+.single-text__link_padd{
+    margin-top: 50px;
+    margin-left: 0;
+    text-transform: none;
+}
+.custom_radio {
+    margin-right: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.charac-b2b__param-item_padd-s{
+    padding-right: 15px;
+}
+.product-charac-b2c{
+    margin-left: -20px;
+}
+.same-product_pad-s {
+    padding: 20px 0 160px;
 }
