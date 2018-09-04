@@ -1,0 +1,90 @@
+.custom_radio {
+	display: inline-block;
+	cursor: pointer;
+	background-image: url('../images/input/radio.png');
+}
+
+.custom_checkbox input, .custom_radio input {
+	display: none;
+}
+
+/* custom select */
+
+/*the container must be positioned relative:*/
+.custom-select-bvzk {
+	position: relative;
+	padding: 0;
+   }
+   .custom-select-bvzk select {
+	display: none; /*hide original SELECT element:*/
+   }
+   .select-selected {
+	background-color: transparent;
+   }
+   /*style the arrow inside the select element:*/
+   .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 7px;
+	right: -15px;
+	width: 14px;
+	height: 7.5px;
+	background: url('../images/input/select.svg') no-repeat;
+   }
+//    .select-selected:before {
+// 	position: absolute;
+// 	content: "";
+// 	top: 13px;
+// 	right: 10px;
+
+// 	width: 12px;
+// 	height: 7.5;
+//    }
+   /*point the arrow upwards when the select box is open (active):*/
+   .select-selected.select-arrow-active:after {
+	  border-color: transparent transparent #fefaef transparent;
+	  top: 7px;
+	  z-index: 99;
+   }
+   .select-selected.select-arrow-active:before {
+	 border-color: transparent transparent #000000 transparent;
+	 top: 6px;
+   }
+   /*style the items (options), including the selected item:*/
+   .select-items div,.select-selected {
+	padding-bottom: 20px;
+	cursor: pointer;
+	color: #757575;
+	font-family: Geometria-Regular;
+	font-size: 18px;
+   }
+   /* .select-items div{
+	  padding: 10px 15px;
+   } */
+   /*style items (options):*/
+   .select-items {
+	position: absolute;
+    background-color: #fff;
+    padding: 10px 0;
+    top: 103%;
+    left: 0px;
+    z-index: 99;
+    border: 1px solid #777;
+    border-radius: 3px;
+    border-top: 0;
+    width: 55px;
+   }
+   /*hide the items when the select box is closed:*/
+   .select-hide {
+	display: none;
+   }
+   .select-items div:hover, .same-as-selected {
+	// background-color: #fafafa;
+   }
+   
+   /* custom select */
+   
+   .select-items div {
+		padding: 10px;
+   }
+   
