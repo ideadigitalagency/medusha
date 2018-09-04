@@ -8,8 +8,7 @@ $(document).ready(function(){
       $('.number').toggleClass('white');
       $('.main-name').toggleClass('white');
       $('.nav-icon .nav-icon__item').toggleClass('white');
-      $('body').toggleClass('disable-scroll');
-      
+      $('body').toggleClass('disable-scroll'); 
   });
 
   $('.nav_wrap').click(function(){
