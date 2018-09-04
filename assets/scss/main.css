@@ -1,12 +1,14 @@
 @import "common/variables.scss";
 @import "common/animation.scss";
 @import "common/main.scss";
+@import "common/header.scss";
 @import "common/main-page.scss";
+@import "common/footer.scss";
 @import "common/category-page.scss";
 @import "common/single.scss";
-@import "common/header.scss";
-@import "common/footer.scss";
-@import "common/slick.scss";
+@import "common/basket.scss";
+@import "common/popup.scss";
 @import "common/slick-img.scss";
 @import "common/input.scss";
+@import "common/slick.scss";
 @import "common/media-queries.scss";

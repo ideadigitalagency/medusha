@@ -78,9 +78,9 @@
    .select-hide {
 	display: none;
    }
-   .select-items div:hover, .same-as-selected {
-	// background-color: #fafafa;
-   }
+//    .select-items div:hover, .same-as-selected {
+// 	// background-color: #fafafa;
+//    }
    
    /* custom select */
    
@@ -88,3 +88,29 @@
 		padding: 10px;
    }
    
+
+
+.quantity-block {
+    margin: auto;
+    font-size: 20px;
+}
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 12px;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+}
+.quantity-arrow-minus:hover ,
+.quantity-arrow-plus:hover{
+    outline: none;
+}
+.quantity-num {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    outline: none;
+}

@@ -20,6 +20,14 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="build/images/next.svg"></button>'
   });
 
+  $('.individual').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 900,
+    prevArrow: '<button type="button" class="slick-prev"><img src="build/images/prev-white.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="build/images/next-white.svg"></button>'
+  });
+
   $("a.scroll-down").click(function() {
     $("html, body").animate({
        scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -60,7 +68,7 @@ $(document).ready(function(){
   $(".menu-animation-fs-text_r").animated( "fadeInRight");
   $(".menu-animation-fs-button_r").animated( "fadeInRight");
 
-  $(".scroll-animation").animated( "fadeInDown");
+  $(".scroll-animation").animated( "bounce");
 
 
   $(".main-slider-left").animated( "fadeInLeft");
@@ -88,6 +96,7 @@ $(document).ready(function(){
 
   $(".bee-animation").animated( "bee");
 
+  
 
 
   var swiper = new Swiper('.swiper-container', {
@@ -109,6 +118,8 @@ $(document).ready(function(){
     },
 
   }) 
+
+  
 
   var galleryTop = new Swiper('.gallery-top', {
     direction: 'vertical',
@@ -138,6 +149,19 @@ $(document).ready(function(){
     moreLink: '<div class="single-text__more"><img src="build/images/single/more.svg" alt=""></div>',
     lessLink: '<div class="single-text__less"><img src="build/images/single/less.svg" alt=""></div>'
   });
+
+  // var swIndividual = new Swiper('.individual', {
+  //   // direction: 'horizontal',
+  //   // autoHeight: true,
+  //   // slideToClickedSlide: true,
+  //   navigation: {
+  //     nextEl: '.individual-top-next',
+  //     prevEl: '.individual-top-prev',
+  //   },
+  // });
+
+  
+
 
   /*----animate-----*/
 });
