@@ -5,7 +5,11 @@ $(document).ready(function(){
   $('.nav-icon').click(function(){
       $(this).toggleClass('open');
       $('.main-menu').toggleClass('open-menu');
+      $('.number').toggleClass('white');
+      $('.main-name').toggleClass('white');
+      $('.nav-icon .nav-icon__item').toggleClass('white');
       $('body').toggleClass('disable-scroll');
+      
   });
 
   $('.nav_wrap').click(function(){
