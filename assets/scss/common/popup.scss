@@ -101,3 +101,18 @@
 .radio-popup_padd{
     padding-right: 9px;
 }
+
+.form__popup_half {
+    display: inline-block;
+    width: 40%;
+    padding-right: 27px;
+    .charac-b2b__param-item {
+        width: 100%;
+    }
+    .charac-b2b-select {
+        min-width: 100%;
+    }
+    .select-items {
+        width: 100%;
+    }
+}
