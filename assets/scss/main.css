@@ -3,6 +3,7 @@
 @import "common/main.scss";
 @import "common/main-page.scss";
 @import "common/category-page.scss";
+@import "common/single.scss";
 @import "common/header.scss";
 @import "common/footer.scss";
 @import "common/slick.scss";
