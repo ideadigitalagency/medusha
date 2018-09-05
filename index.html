@@ -34,7 +34,8 @@
 					</div>
 		
 					<div class="col-lg-6 align-center menu-animation-logo">
-						<div class="logo"><a href=""><img src="build/images/logo.svg" alt=""></a></div>
+						<div class="logo"><a href="#"><img src="build/images/logo.svg" alt=""></a></div>
+						<div class="logo-white"><a href="#"><img src="build/images/logo-white.svg" alt=""></a></div>
 					</div>
 		
 					<div class="col-lg-3 col-sm-6 col-2 align-right menu-animation-burger">
@@ -59,44 +60,56 @@
 	</header>
 
 	<div id="main-menu" class="main-menu ">
-		<div class="main-menu-wrapper">
-			<div class="title title_padding">
-				<h2 class="title_small title_small_nature">меню</h2>
-				<div class="title_big">меню</div>
-			</div>
-	
-			<div class="menu-list-wrp">
-				<div class="menu-list menu-list-main">
-					<div class="menu-list__title">основное</div>
-					<?php wp_nav_menu(array( 'theme_location' => 'menu-main', 'menu_class' => '' )); ?>
+		
+		<div class="menu-wrap menu-wrap_padd">
+			
+			<div class="container">
+				
+				<div id="menu-ul-wrp" class="menu-ul-wrp">
+					<ul>
+						<li><a href="#">Главная</a> </li>
+						<li>
+							<a href="#" id="link-prod" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Мёд в органической упаковке</a>
+							<ul class="sub-menu sub-menu_padd dropdown-menu" aria-labelledby="link-prod">
+								<li><a href="#">Для корпоративных клиентов</a></li>
+								<li><a href="#">Для частных клиентов</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" id="link-prod" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Подарочные наборы</a>
+							<ul class="sub-menu sub-menu_padd2 dropdown-menu" aria-labelledby="link-prod">
+								<li><a href="#">Для корпоративных клиентов</a></li>
+								<li><a href="#">Для частных клиентов</a></li>
+							</ul>
+						</li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
 				</div>
-				<div class="menu-list menu-list_flex">
-					<div class="menu-list__title menu-list__title_small">услуги</div>
-					<div class="row">
-						<div class="col-xl-4 col-lg-5 col-md-4 col-sm-12">
-							<?php wp_nav_menu(array( 'theme_location' => 'menu-servises1', 'menu_class' => '' )); ?>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-3 col-sm-12">
-							<?php wp_nav_menu(array( 'theme_location' => 'menu-servises2', 'menu_class' => '' )); ?>
-						</div>
-						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-							<?php wp_nav_menu(array( 'theme_location' => 'menu-servises3', 'menu_class' => '' )); ?>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="menu-socia">
-				<div class="menu-socia__line"></div>
-				<div class="footer__social">
-					<a target="_noblank" href="https://www.facebook.com/primaderm.center/" class="footer__social-item footer__social-item_f">
+
+				<div class="menu-social menu-social_padd">
+					<a href="#">
+						<img src="build/images/main-page/instagram-logo-white.svg" alt="" class="show">
+						<img src="build/images/main-page/instagram-logo-oliv.svg" alt="" class="hover">
 					</a>
-					<a target="_noblank" href="https://www.instagram.com/primaderm_dnipro/" class="footer__social-item footer__social-item_i">
+					<a href="#">
+						<img src="build/images/main-page/facebook-white.svg" alt="" class="show">
+						<img src="build/images/main-page/facebook-oliv.svg" alt="" class="hover">
 					</a>
 				</div>
+
+				<div class="menu-lang">
+					<span class="menu-lang__item">Укр</span>
+					<span class="menu-lang__item active">Рус</span>
+					<span class="menu-lang__item">Анг</span>
+				</div>
+
 			</div>
+
 		</div>
 		
-		</div>
+	</div>
 
 	<section class="main-first-screen main-about_animate-left main-first-screen_padd">
 

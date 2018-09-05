@@ -8,11 +8,11 @@
 }
 @font-face {
   font-family: PFDin-Regular;
-  src: url("../../font/pfdintextcondpro-regular.ttf");
+  src: url("../../font/pfdintextcondpro-regular.otf");
 }
 @font-face {
   font-family: PFDin-Bold;
-  src: url("../../font/pfdintextcondpro-bold.ttf");
+  src: url("../../font/pfdintextcondpro-bold.otf");
 }
 
 
@@ -27,7 +27,6 @@ html, body, div, span, p, header, footer, section, h1, h2, h3, h4, h5, h6, ul, l
     outline: 0;
     text-decoration: none;
     border: 0;
-    position: relative;
 }
 body{
   background: #fff;
