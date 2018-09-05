@@ -1,0 +1,141 @@
+.about_padd{
+    padding-top: 221px;
+    padding-bottom: 78px;
+}
+.about{
+    position: relative;
+}
+.about__video{
+    position: relative;
+    z-index: 9;
+}
+.about__video_bg{
+    background: #FFFDEE;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 133px;
+    z-index: -1;
+}
+
+.about-block__title {
+    display: inline-block;
+    font-family: PFDin-Bold;
+    line-height: normal;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.about-block__title_padd{
+    padding-bottom: 41px;
+}
+.about-block__text{
+    font-family: Georgia-Regular;
+    line-height: 24px;
+    font-size: 16px;
+    color: #8D8D8D;
+}
+.about-block-2__wrp{
+    margin-top: -30px;
+}
+
+.about-block-2{
+    min-height: 1212px;
+    position: relative;
+}
+.about-block__name{
+    font-family: PFDin-Bold;
+    line-height: normal;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #444444;
+}
+.about-block-2__child-one{
+    position: absolute;
+    left: 0;
+    top: 23%;
+}
+.child-wrp{
+    position: relative;
+}
+.child-one_rotate {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -18%;
+    top: 20%;
+}
+
+.about-block-2__child-two{
+    position: absolute;
+    right: 10%;
+    top: 35%;
+}
+.child-two_padd{
+    padding-bottom: 15px;
+}
+
+.about-block-2___bg{
+    background: #FFFDEE;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 31%;
+    width: 100%;
+    height: 256px;
+    z-index: -1;
+}
+.about-block-2___bg-two{
+    background-image: url('../images/main-page/honey_bg.jpg');
+    position: absolute;
+    left: 0;
+    width: 33%;
+    height: 33%;
+    top: -8%;
+    z-index: 0;
+}
+
+
+.about-block-2__child-three{
+    position: absolute;
+    left: 18%;
+    bottom: 0;
+}
+.child-three-wrp{
+    position: relative;
+}
+.child-three_rotate{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 10%;
+    left: -9%;
+}
+
+.about-bloc-last_padd{
+    padding-top: 118px;
+    padding-bottom: 189px;
+}
+.about-bloc-last-item_padd{
+    padding-top: 50px;
+}
+.child-four-wrp{
+    position: relative;
+}
+.child-last_rotate{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 45%;
+    left: -52%;
+}
+.about-block-last___bg{
+    background: #FFFDEE;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 256px;
+    z-index: -1;
+}
