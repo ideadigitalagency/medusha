@@ -143,7 +143,6 @@
     background: #F9FEF8;
 }
 .blog-item{
-    text-align-last: left;
     display: inline-block;
 }
 .blog-item__img-wrp{
@@ -242,38 +241,6 @@
         border-bottom: 2px solid #444444;
     }
 }
-
-// .swiper-container {
-//     width: 100%;
-//     height: 100%;
-//     margin: 0 auto;
-//     position: relative;
-//     overflow: hidden;
-//     list-style: none;
-//     padding: 0;
-//     z-index: 1;
-// }
-// .swiper-slide {
-// text-align: center;
-// font-size: 18px;
-// background: #fff;
-// /* Center slide text vertically */
-// display: -webkit-box;
-// display: -ms-flexbox;
-// display: -webkit-flex;
-// display: flex;
-// -webkit-box-pack: center;
-// -ms-flex-pack: center;
-// -webkit-justify-content: center;
-// justify-content: center;
-// -webkit-box-align: center;
-// -ms-flex-align: center;
-// -webkit-align-items: center;
-// align-items: center;
-// }
-// .slider-review{
-//     height: 400px;
-// }
 
 .slider-review {
     position: relative;
