@@ -1,3 +1,15 @@
+.blog{
+    position: relative;
+}
+.blog_bg{
+    background: #FFFDEE;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 935px;
+    z-index: -1;
+}
 .blog_padd{
     padding-top: 223px;
     padding-bottom: 263px;
@@ -16,7 +28,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #333333;
-        padding: 0 48px 49px;
 }
 .blog-item__title_big_padd{
     padding-bottom: 59px;
