@@ -42,16 +42,16 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 900,
-    prevArrow: '<button type="button" class="slick-prev"><img src="build/images/prev.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="build/images/next.svg"></button>'
+    prevArrow: '<button type="button" class="slick-prev"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/prev.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/next.svg"></button>'
   });
 
   $('.individual').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 900,
-    prevArrow: '<button type="button" class="slick-prev"><img src="build/images/prev-white.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="build/images/next-white.svg"></button>'
+    prevArrow: '<button type="button" class="slick-prev"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/prev-white.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/next-white.svg"></button>'
   });
 
   $("a.scroll-down").click(function() {
@@ -168,8 +168,7 @@ $(document).ready(function(){
     },
   });
 
-  galleryTop.controller.control = galleryThumbs;
-  galleryThumbs.controller.control = galleryTop;
+  
 
   $('.single-text__read-more').readmore({
     collapsedHeight: 41,

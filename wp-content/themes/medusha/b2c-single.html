@@ -202,7 +202,7 @@
 			</div>
 		</div>
 		
-		<div class="main-first-screen__bg menu-animation-fs-right"></div>
+		<!-- <div class="main-first-screen__bg menu-animation-fs-right"></div> -->
 	
 		<div class="scroll-animation">
             <div class="scroll-down-wrp_r">
@@ -277,6 +277,11 @@
             </div>
         </div>
     </section>
+
+    <script>
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
+    </script>
 
 	<footer class="footer">
 		<div class="container">

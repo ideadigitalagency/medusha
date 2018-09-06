@@ -627,3 +627,25 @@
   right: 0;
 }
 
+.instagram-pics{
+  list-style: none;
+}
+.instagram-pics li{
+  display: inline-block;
+  width: 49%;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.instagram-pics  img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.instagram2 .instagram-pics li:nth-child(1),
+.instagram2 .instagram-pics li:nth-child(2),
+.instagram2 .instagram-pics li:nth-child(3),
+.instagram2 .instagram-pics li:nth-child(4),
+.instagram2 .instagram-pics li:nth-child(5),
+.instagram2 .instagram-pics li:nth-child(6){
+  display: none;
+}

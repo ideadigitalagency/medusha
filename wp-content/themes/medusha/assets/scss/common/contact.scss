@@ -18,6 +18,11 @@
 .contact-screen__bg-map{
     z-index: 99;
     max-height: 835px;
+    height: 100%;
+    width: 50%;
+}
+div#intergeo_mapIzM {
+    height: 100% !important;
 }
 
 .contact__title{
@@ -42,7 +47,7 @@
     padding-bottom: 12px;
 }
 
-.contact__text , .contact__text a , .contact__text span{
+.contact__text , .contact__text a , .contact__text span , .contact__text p{
     font-family: Georgia-Regular;
     line-height: 17px;
     font-size: 14px;
