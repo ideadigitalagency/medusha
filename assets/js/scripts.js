@@ -122,7 +122,10 @@ $(document).ready(function(){
 
   $(".bee-animation").animated( "bee");
 
-  
+  $(".bee-404-one").animated( "pulse");
+  $(".bee-404-two").animated( "pulse");
+  $(".bee-404-three").animated( "pulse");
+  $(".bee-404-four").animated( "pulse");
 
   var swiper = new Swiper('.swiper-container', {
 
