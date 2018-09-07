@@ -12,7 +12,7 @@
 	<?php if (is_front_page() || is_home()) : ?>
         <title><?php bloginfo('name'); ?></title>
     <?php else : ?>
-        <title><?php the_title(); ?></title>
+        <title><?php wp_title(); ?></title>
     <?php endif; ?>
 
     <?php wp_head(); ?>
@@ -28,7 +28,7 @@
 	<meta property="og:image" content="build/common/og.jpg">
 	<meta property="og:description" content="">
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 	<header class="header header_padd">
 		<div class="container">
@@ -98,7 +98,7 @@
 							</ul>
 						</li>
 						<li><a href="#">О нас</a></li>
-						<li><a href="#">Блог</a></li>
+						<li><a href="<?php echo get_category_link(17); ?>">Блог</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>

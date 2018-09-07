@@ -71,10 +71,8 @@ add_filter('the_content', 'do_shortcode');//Добавление шорткод�
 add_filter('widget_text', 'do_shortcode');//Добавление шорткода в виджеты
 //define( 'WPCF7_UPLOADS_TMP_DIR', '/your/file/path' );
 //Новые размер миниатюр
-add_image_size( 'blog-thumb', 460, 260, array( 'center', 'top' ) );
-add_image_size( 'blog-article', 945, 480, array( 'center', 'top' ) );
-add_image_size( 'sale-thumb', 945, 480, array( 'center', 'top' ) );
-add_image_size( 'servises-thumb', 350, 350, array( 'center', 'top' ) );
+add_image_size( 'blog-thumb', 255, 188, array( 'center', 'top' ) );
+
 
 
 function wp_corenavi() {
@@ -88,66 +86,17 @@ function wp_corenavi() {
     // $total = 1; //1 - выводить текст "Страница N из N", 0 - не выводить
     $a['mid_size'] = 1; //сколько ссылок показывать слева и справа от текущей
     $a['end_size'] = 1; //сколько ссылок показывать в начале и в конце
-    $a['prev_text'] = '<img src="http://localhost:8888/primaderma.com/wp-content/themes/primaderma/build/images/prev.png" alt="" class="pagination__prev"><img src="http://localhost:8888/primaderma.com/wp-content/themes/primaderma/build/images/prev_h.png" alt="" class="pagination__prev_h">'; //текст ссылки "Предыдущая страница"
-    $a['next_text'] = '<img src="http://localhost:8888/primaderma.com/wp-content/themes/primaderma/build/images/next.png" alt="" class="pagination__next"><img src="http://localhost:8888/primaderma.com/wp-content/themes/primaderma/build/images/next_h.png" alt="" class="pagination__next_h">'; //текст ссылки "Следующая страница"
-    if ($max > 1) echo '<div class="pagi_wrp">';
+    $a['prev_text'] = '<img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/prev.svg" alt=""><span>Назад</span>'; //текст ссылки "Предыдущая страница"
+    $a['next_text'] = '<span>Вперед</span><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/next.svg" alt=""> '; //текст ссылки "Следующая страница"
+
+    if ($max > 1) echo '<div class="pagination">';
     if ($total == 1 && $max > 1) $pages = '<span class="pages">' . $current . '' . $max . '</span>'."\r\n";
     echo $pages . paginate_links($a);
     if ($max > 1) echo '</div>';
 }
-// function bvzk_create_post_type() {
-//     $labels = array(
-//         'name' => __( 'Услуги' ),
-//         'singular_name' => __( 'Услуги' ),
-//         'add_new' => __( 'Новый Услуга' ),
-//         'add_new_item' => __( 'Добавить новый Услугу' ),
-//         'edit_item' => __( 'Редактировать Услугу' ),
-//         'new_item' => __( 'Новый Услуга' ),
-//         'view_item' => __( 'Просмотреть Услугу' ),
-//         'search_items' => __( 'Поиск Услуг' ),
-//         'not_found' =>  __( 'Услуга не найден' ),
-//         'not_found_in_trash' => __( 'Услуга не найдена в корзине' ),
-//     );
-//     $args = array(
-//         'labels' => $labels,
-//         'has_archive' => true,
-//         'public' => true,
-//         'hierarchical' => true,
-//         'menu_position' => 5,
-//         'supports' => array(
-//             'title',
-//             'editor',
-//             'excerpt',
-//             'custom-fields',
-//             'thumbnail'
-//         ),
-// //        'taxonomies' => array( 'post_tag'),
-//     );
-//     register_post_type( 'servises', $args );
-// }
-// add_action( 'init', 'bvzk_create_post_type' );
-// function bvzk_taxonomy() {
-//     register_taxonomy( 'servises_category', 'servises' ,
-//         array(
-//             'labels' => array(
-//                 'name'              => 'Категории Услуги',
-//                 'singular_name'     => 'Категории Услуги',
-//                 'search_items'      => 'Поиск Услуг Категорий',
-//                 'all_items'         => 'Все Услуги Категории',
-//                 'edit_item'         => 'Редактировать Услугу Категории',
-//                 'update_item'       => 'Обновить Категорию Услуг',
-//                 'add_new_item'      => 'Добавить новую Категорию Услуги',
-//                 'new_item_name'     => 'Новая Категория Услуги',
-//                 'menu_name'         => 'Категория Услуги',
-//             ),
-//             'hierarchical' => true,
-//             'sort' => true,
-//             'args' => array( 'orderby' => 'term_order' ),
-//             'rewrite' => array( 'slug' => 'servis' ),
-//             'show_admin_column' => true,
-//             'show_tagcloud' => true,
-//         )
-//     );
-// }
-// add_action( 'init', 'bvzk_taxonomy' );
-// //___________________
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}

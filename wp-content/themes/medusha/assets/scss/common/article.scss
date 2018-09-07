@@ -53,7 +53,24 @@
         color: #8D8D8D;
     }
 }
+.artic__next-prev{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
 // .artic__next-prev_padd{
 //     padding-top: 65px;
 //     padding-bottom: 55px;
 // }
+
+.artic__next-prev-wrp{
+    position: relative;
+    
+}
+.artic__next-prev-wrp a{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

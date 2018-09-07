@@ -20,7 +20,7 @@
     z-index: -1;
 }
 
-.about-block__title {
+.about-block__title , .about-block__title p{
     display: inline-block;
     font-family: PFDin-Bold;
     line-height: normal;
@@ -31,7 +31,7 @@
 .about-block__title_padd{
     padding-bottom: 41px;
 }
-.about-block__text{
+.about-block__text , .about-block__text p{
     font-family: Georgia-Regular;
     line-height: 24px;
     font-size: 16px;
