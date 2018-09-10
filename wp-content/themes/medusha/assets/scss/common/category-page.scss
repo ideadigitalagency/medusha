@@ -12,7 +12,7 @@
     display: inline-block;
     min-height: 320px;
 }
-.category-items_right{
+.category-items:nth-child(2n){
     justify-content: flex-end;
 }
 .category_padd{
@@ -364,7 +364,7 @@
 .review-slide__job_padd{
     padding-bottom: 30px;
 }
-.review-slide__text{
+.review-slide__text , .review-slide__text p , .review-slide__text div{
     font-family: Georgia-Regular;
     width: 430px;
     line-height: 16px;

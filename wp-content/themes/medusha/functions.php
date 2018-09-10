@@ -72,6 +72,9 @@ add_filter('widget_text', 'do_shortcode');//Добавление шорткод�
 //define( 'WPCF7_UPLOADS_TMP_DIR', '/your/file/path' );
 //Новые размер миниатюр
 add_image_size( 'blog-thumb', 255, 188, array( 'center', 'top' ) );
+add_image_size( 'product', 300, 300, array( 'center', 'top' ) );
+add_image_size( 'rewiev', 160, 160, true );
+add_image_size( 'same-post', 185, 185, true );
 
 
 
@@ -96,7 +99,24 @@ function wp_corenavi() {
 }
 
 
-add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
-    add_theme_support( 'woocommerce' );
-}
+// add_action( 'after_setup_theme', 'woocommerce_support' );
+// function woocommerce_support() {
+//     add_theme_support( 'woocommerce' );
+// }
+
+
+/**
+ * Change number of related products output
+ */ 
+function woo_related_products_limit() {
+    global $product;
+      
+      $args['posts_per_page'] = 6;
+      return $args;
+  }
+  add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+    function jk_related_products_args( $args ) {
+      $args['posts_per_page'] = 4; // 4 related products
+    //   $args['columns'] = 2; // arranged in 2 columns
+      return $args;
+  }

@@ -77,6 +77,13 @@ $(document).ready(function(){
     arrows: false
   });
 
+  $('.single-text__read-more').readmore({
+    collapsedHeight: 41,
+    speed: 350,
+    moreLink: '<div class="single-text__more"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/single/more.svg" alt=""></div>',
+    lessLink: '<div class="single-text__less"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/single/less.svg" alt=""></div>'
+  });
+
 
   /*----animate-----*/
   $(".menu-animation-number").animated( "fadeIn");
@@ -169,13 +176,13 @@ $(document).ready(function(){
   });
 
   
+		galleryTop.controller.control = galleryThumbs;
+		galleryThumbs.controller.control = galleryTop;
+	
 
-  $('.single-text__read-more').readmore({
-    collapsedHeight: 41,
-    speed: 350,
-    moreLink: '<div class="single-text__more"><img src="build/images/single/more.svg" alt=""></div>',
-    lessLink: '<div class="single-text__less"><img src="build/images/single/less.svg" alt=""></div>'
-  });
+  
+
+  
 
   // var swIndividual = new Swiper('.individual', {
   //   // direction: 'horizontal',

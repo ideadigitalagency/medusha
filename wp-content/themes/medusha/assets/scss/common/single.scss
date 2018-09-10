@@ -191,7 +191,9 @@
     padding-bottom: 54px;
 }
 .same-product-wrp{
-    display: inline-block;
+    display: table;
+    text-align: center;
+    margin: 0 auto;
 }
 .same-product__img{
     position: relative;

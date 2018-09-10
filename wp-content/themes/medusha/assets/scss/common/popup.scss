@@ -69,6 +69,7 @@
     display: block;
     right: 0;
     top: 0;
+    max-width: none !important;
 }
 .form-close-btn{
     position: absolute;
@@ -77,6 +78,7 @@
     top: 13px;
     transition: 500ms;
     -webkit-transition: 500ms;
+    max-width: none !important;
 }
 .modal-body {
     padding: 0;
