@@ -35,7 +35,16 @@ get_header(); ?>
 					<div class="first-screen-wrp first-screen-wrp_padd menu-animation-fs-right">
 
                         <div class="first-screen__eko-text first-screen__eko-text_padd menu-animation-fs-eko_r">Эко продукт</div>
-                        <h1 class="first-screen__title first-screen__title_padd menu-animation-fs-title_r">Органический мед упакованный природой</h1>
+                        <h1 class="first-screen__title first-screen__title_padd menu-animation-fs-title_r">
+                        <?php if ( is_tax( 'product_cat', 'podarochnye-nabory-chastnym' ) ) : ?>
+                            Подарочные наборы
+                        <?php elseif ( is_tax( 'product_cat', 'podarochnye-nabory-korporativnym' ) ) : ?>
+                            Подарочные наборы
+                        <?php else : ?>    
+
+                        Органический мед упакованный природой
+                        <?php endif; ?>
+                        </h1>
                         <div class="first-screen__text first-screen__text_padd menu-animation-fs-text_r">
                                 <!-- <p>Первые мастера-пчеловоды разливали мед по восковых чашах. Целебный продукт бережно хранился, не терял своих свойств, что позволяло наслаждаться неповторимым вкусом долгое время.</p>
                                 <p>Эта удивительно простая и полезная технология  дошла до наших дней и воплощена в продукции ТМ Медуша.</p>
@@ -133,6 +142,103 @@ get_header(); ?>
 
     </section>
 
+    <?php if ( is_tax( 'product_cat', 'podarochnye-nabory-chastnym' ) ) : ?>
+
+    <section class="your-kit your-kit_padd">
+        <div class="container">
+
+            <div class="your-kit__title your-kit__title_padd">Собери набор на свой вкус</div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="your-kit-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-1.jpg" alt="">
+                        <div class="your-kit-item__name">Мед со свечкой </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="your-kit-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-2.jpg" alt="">
+                        <div class="your-kit-item__name">Мед с чашкой</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="your-kit-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-1.jpg" alt="">
+                        <div class="your-kit-item__name">Твои пожелание </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="your-kit__link your-kit__link_padd hvr-sweep-to-top" data-toggle="modal" data-target="#leaveAppli">Оставить заявку</a>
+
+        </div>
+    </section>
+
+                            
+    <?php elseif ( is_tax( 'product_cat', 'podarochnye-nabory-korporativnym' ) ) : ?>
+
+    <section class="your-kit your-kit_padd">
+        <div class="container">
+
+            <div class="your-kit__title your-kit__title_padd">Собери набор на свой вкус</div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="your-kit-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-1.jpg" alt="">
+                        <div class="your-kit-item__name">Мед со свечкой </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="your-kit-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-2.jpg" alt="">
+                        <div class="your-kit-item__name">Мед с чашкой</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="your-kit-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-1.jpg" alt="">
+                        <div class="your-kit-item__name">Твои пожелание </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="your-kit__link your-kit__link_padd hvr-sweep-to-top" data-toggle="modal" data-target="#leaveAppli">Оставить заявку</a>
+
+        </div>
+    </section>
+
+    <?php elseif ( is_tax( 'product_cat', 'Мед корпоративным' ) ) : ?>
+
+    <section class="instagramm instagramm_bg instagramm_bg-padd instagramm_padd">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4 align-left">
+                    <?php dynamic_sidebar( 'Instagram' ); ?>
+                </div>
+                <div class="col-lg-4">
+                    <div class="instagramm-text instagramm-text_padd">
+                        <div class="instagramm-text__title instagramm-text__title_padd">Instagram</div>
+                        <div class="instagramm-text__descr">
+                                Подписывайтесь на блог <span>Medusha</span> в Instagram! Там вас ждет множество пополняющихся тематических подборок, информация о свежих постах, последние новости и красивые снимки.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-right">
+                    <div class="instagram2">
+                        <?php dynamic_sidebar( 'Instagram2' ); ?>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php else : ?>  
+
+    <?php endif; ?>
+
     <section class="slider-review slider-review_padd">
         <div class="container">
             <div class="swiper-container">
@@ -164,6 +270,15 @@ get_header(); ?>
         </div>
     </section>
     
+
+    <?php if ( is_tax( 'product_cat', 'podarochnye-nabory-chastnym' ) ) : ?>
+                            
+    <?php elseif ( is_tax( 'product_cat', 'podarochnye-nabory-korporativnym' ) ) : ?>
+
+    <?php elseif ( is_tax( 'product_cat', 'Мед корпоративным' ) ) : ?>
+        
+    <?php else : ?>  
+
     <section class="blog-items-wrp blog-items-wrp_padd">
         <div class="container">
             <div class="blog-title blog-title_padd">Блог</div>
@@ -186,6 +301,10 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    
+    <?php endif; ?>
+
+   
 
 	<section class="main-form main-form-category main-form_padd">
 
