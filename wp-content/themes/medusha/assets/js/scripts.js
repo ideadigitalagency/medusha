@@ -42,8 +42,8 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 900,
-    prevArrow: '<button type="button" class="slick-prev"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/prev.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/next.svg"></button>'
+    prevArrow: '<button type="button" class="slick-prev"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/prev-white.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="http://localhost:8888/medusha/wp-content/themes/medusha/build/images/next-white.svg"></button>'
   });
 
   $('.individual').slick({
@@ -74,7 +74,19 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
 
   $('.single-text__read-more').readmore({
@@ -151,6 +163,12 @@ $(document).ready(function(){
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      // when window width is <= 480px
+      480: {
+        direction: 'horizontal',
+      }
+    }
 
   }) 
 

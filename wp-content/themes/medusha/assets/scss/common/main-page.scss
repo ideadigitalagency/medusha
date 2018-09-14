@@ -1,6 +1,6 @@
 .main-first-screen{
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .main-first-screen__bg{
   position: absolute;
@@ -90,6 +90,17 @@
 .main-slider-wrp{
   position: relative;
 }
+.main-slider-wrp__title{
+  font-family: PFDin-Bold;
+  text-align: center;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.main-slider-wrp__title_padd{
+  padding-bottom: 40px;
+}
 .main-slider-wrp_padd{
   padding: 60px 0 135px;
 }
@@ -128,7 +139,7 @@
   bottom: auto;
   width: 75px;
   height: 62px;
-  background-color: #F6F6F6;
+  background-color: #feb101;
   outline: none;
   cursor: pointer;
 }
@@ -655,5 +666,8 @@
 .instagram2 .instagram-pics li:nth-child(4),
 .instagram2 .instagram-pics li:nth-child(5),
 .instagram2 .instagram-pics li:nth-child(6){
+  display: none;
+}
+.mob-bg-img{
   display: none;
 }

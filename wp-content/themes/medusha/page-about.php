@@ -28,7 +28,7 @@ Template Name: О нас
         <div class="container">
 
             <div class="row">
-                <div class="offset-lg-5 col-lg-7">
+                <div class="offset-lg-5 col-lg-7 offset-md-6 col-md-6 col-sm-12">
                     <div class="about-block-2__wrp about-block-2__wrp">
                         <div class="about-block__title about-block__title_padd"><?php the_field('about__tit'); ?></div>
                         <div class="about-block__text"><?php the_field('about__text'); ?></div>
@@ -75,11 +75,11 @@ Template Name: О нас
     <div class="about-bloc-last about-bloc-last_padd">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 align-right about-bloc-last-item_padd">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-right about-bloc-last-item_padd">
                     <div class="about-block__title about-block__title_padd"><?php the_field('about__tit2'); ?></div>
                     <div class="about-block__text"><?php the_field('about__text2'); ?></div>
                 </div>
-                <div class="col-lg-5 offset-lg-1">
+                <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-12">
                     <div class="child-four-wrp">
                         <div class="about-block__name child-last_rotate"><?php the_field('about__tit_photo4'); ?></div>
 

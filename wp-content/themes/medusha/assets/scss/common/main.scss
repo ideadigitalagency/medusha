@@ -79,19 +79,20 @@ a , a:hover ,a:focus{
 .overflow-hidden{
   overflow: hidden;
 }
-.scroll-down-wrp{
+.scroll-animation{
   position: absolute;
   left: 20px;
-  bottom: -80px;
-  z-index: 999;
+  bottom: 96px;
+  z-index: 99;
+}
+.scroll-down-wrp{
   transform: rotate(-90deg);
 }
 .scroll-down-wrp_r{
   position: absolute;
+  left: auto;
   right: 20px;
-  bottom: 30px;
-  z-index: 999;
-  transform: rotate(-90deg);
+  bottom: 96px;
 }
 .scroll-down {
   font-family: Georgia-Regular;

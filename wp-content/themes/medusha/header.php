@@ -35,15 +35,14 @@
 
 				<div class="row justify-content-between no-gutters">
 
-					<div class="col-lg-3 col-sm-6 col-10 menu-animation-number">
+					<div class="col-lg-3 col-md-3 col-sm-3  hidden-mob menu-animation-number">
 						<a href="tel:+380 (56) 790 02 33" class="number">+380 (56) 790 02 33</a>
 					</div>
 		
-					<div class="col-lg-6 align-center menu-animation-logo">
+					<div class="col-lg-6 col-md-6 col-sm-6 align-center menu-animation-logo">
                     <?php if (is_front_page() || is_home()) : ?>
                         <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo.svg" alt=""></div>
 						<div class="logo-white"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo-white.svg" alt=""></div>
-
                     <?php else : ?>
                         <div class="logo"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo.svg" alt=""></a></div>
 						<div class="logo-white"><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/build/images/logo-white.svg" alt=""></a></div>
@@ -51,7 +50,7 @@
 						
 					</div>
 		
-					<div class="col-lg-3 col-sm-6 col-2 align-right menu-animation-burger">
+					<div class="col-lg-3 col-md-3 col-sm-3 align-right menu-animation-burger">
 						<div class="menu-burger">
 							<div class="main_menu">
 								<div class="nav_wrap">

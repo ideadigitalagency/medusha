@@ -11,7 +11,7 @@ Template Name: Индивидуальное решение
 
             <div class="container ">
                 <div class="row no-gutters">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
                         <div class="individual menu-animation-fs-left">
 								
 								<?php if (have_posts()): while (have_posts()): the_post(); ?>
@@ -33,7 +33,7 @@ Template Name: Индивидуальное решение
         
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
                         <div class="first-screen-wrp first-screen-wrp_padd menu-animation-fs-right">
     
                             <div class="first-screen__eko-text first-screen__eko-text_padd menu-animation-fs-eko_r">Эко продукт</div>
@@ -50,8 +50,8 @@ Template Name: Индивидуальное решение
             
             <div class="main-first-screen__bg menu-animation-fs-right"></div>
         
-            <div class="scroll-animation">
-                <div class="scroll-down-wrp_r">
+            <div class="scroll-animation scroll-down-wrp_r">
+                <div class="scroll-down-wrp">
                     <a href="#next-block" class="scroll-down"><img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/line-down.png" alt=""> листай вниз</a>
                 </div>
             </div>
@@ -61,13 +61,14 @@ Template Name: Индивидуальное решение
 	<section id="next-block" class="main-slider-wrp main-slider-wrp_padd">
 
 		<div class="container">
+			<h2 class="main-slider-wrp__title main-slider-wrp__title_padd">Создадим форму для твоего бизнеса</h2>
 			<div class="row no-gutters">
-				<div class="col-6 main-slider-left">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 main-slider-left">
 					<div class="main-slider__decore">
 						<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/decorate-2.png" alt="">
 					</div>
 					<div class="main-slider__decore-two">
-						<img src="build/images/main-page/decorate-3.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/decorate-3.png" alt="">
 					</div>
 					<div class="main-slider">
 
@@ -90,7 +91,7 @@ Template Name: Индивидуальное решение
 
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 					<div class="main-slider-images">
 
 						<div class="images-item images-item-r-1 images-item_one">
@@ -137,7 +138,7 @@ Template Name: Индивидуальное решение
 		</div>
 
 		<div class="main-slider__bg-left"></div>
-        <div class="main-slider__bg-right"></div>
+        <!-- <div class="main-slider__bg-right"></div> -->
         <div class="main-slider__bg-bottom"></div>
 
     </section>

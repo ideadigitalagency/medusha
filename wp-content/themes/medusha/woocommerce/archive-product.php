@@ -26,12 +26,12 @@ get_header(); ?>
 
 		<div class="container ">
 			<div class="row no-gutters">
-                <div class="col-6">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="video video_padd menu-animation-fs-left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/video.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/video.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
-				<div class="col-6">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 					<div class="first-screen-wrp first-screen-wrp_padd menu-animation-fs-right">
 
                         <div class="first-screen__eko-text first-screen__eko-text_padd menu-animation-fs-eko_r">Эко продукт</div>
@@ -90,13 +90,13 @@ get_header(); ?>
             <div class="category-items product-fade">
                <a href="<?php echo the_permalink(); ?>" class="category-item">
                    <div class="row no-gutters">
-                        <div class="col-lg-6 align-center">
+                        <div class="col-lg-6 col-md-3 col-sm-5 col-5">
                             <div class="category-item__img">
                                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/prod-1.png" alt="" class="img-fluid"> -->
                                 <?php echo the_post_thumbnail('product', array('class' => 'img-fluid')) ?>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-9 col-sm-7 col-7 ">
                             <div class="category-item__type category-item__type_padd">продукт</div>
                             <div class="category-item__title category-item__title_padd"><?php the_title(); ?></div>
                             <div class="category-item__text category-item__text_padd"><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 90, '...');?></div>
@@ -121,12 +121,12 @@ get_header(); ?>
                 <div class="category-items category-items_right product-fade">
                     <a href="<?php echo get_page_link( 110 ); ?>" class="category-item">
                         <div class="row no-gutters">
-                                <div class="col-lg-6 align-center">
+                                <div class="col-lg-6 col-md-3 col-sm-5 col-5 align-center">
                                     <div class="category-item__img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/ptod-6.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-9 col-sm-7 col-7">
                                     <div class="category-item__type category-item__type_padd">продукт</div>
                                     <div class="category-item__title category-item__title_padd">Индивидуальные 
                                             решения</div>
@@ -214,10 +214,10 @@ get_header(); ?>
     <section class="instagramm instagramm_bg instagramm_bg-padd instagramm_padd">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-lg-4 align-left">
+                <div class="col-lg-4 col-md-4  align-left inst_mob">
                     <?php dynamic_sidebar( 'Instagram' ); ?>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 ">
                     <div class="instagramm-text instagramm-text_padd">
                         <div class="instagramm-text__title instagramm-text__title_padd">Instagram</div>
                         <div class="instagramm-text__descr">
@@ -225,7 +225,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 align-right">
+                <div class="col-lg-4 col-md-4  align-right">
                     <div class="instagram2">
                         <?php dynamic_sidebar( 'Instagram2' ); ?>
                     </div>
@@ -285,7 +285,7 @@ get_header(); ?>
             <div class="row">
             <?php $pc = new WP_Query('cat=17&orderby=date&posts_per_page=4'); ?>
             <?php while ($pc->have_posts()) : $pc->the_post(); ?>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                     <a href="<?php echo the_permalink(); ?>" class="blog-item blog-item-fade-1">
                         <div class="blog-item__img-wrp">
                             <!-- <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/blog-1.jpg" alt="" class="blog-item__img img-fluid"> -->

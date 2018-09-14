@@ -3,15 +3,15 @@
 <footer class="footer">
     <div class="container">
         <div class="row no-gutters footer_padd">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-4">
                 <div class="copy-right">
                     ©Medusha 2018 
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-2 col-1 hidden-mob">
                 <a href="tel:+380 (56) 790 02 33" class="footer-number">+380 (56) 790 02 33</a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-2 col-sm-2 col-2">
                 <div class="social">
                     <a href="<?php the_field('main-page__inst'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/instagram-logo.png" alt="">
@@ -21,7 +21,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 align-right">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-6 align-right">
                 <a target="_blank" href="https://ideadigital.agency/" class="idea">
                     <span>CREATED BY:</span> IDIADIGITAL.Agency
                 </a>
@@ -42,14 +42,6 @@
 			</button>
 			
 			<div class="modal-body">
-				<!-- <div class="form__title-big form__title-big_padd">Остались вопросы</div>
-				<form action="">
-					<input type="text" placeholder="Имя" class="form__popup form__popup_padd">
-					<input type="text" placeholder="E-mail" class="form__popup form__popup_padd">
-					<input type="text" placeholder="Телефон" class="form__popup form__popup_padd">
-					<input type="text" placeholder="Сообщение" class="form__popup form__popup_padd">
-                    <input type="submit" value="отправить" class="main__btn form__submit form__submit-full">
-                </form> -->
                 <?php echo do_shortcode('[contact-form-7 id="27"]'); ?>
 			</div>
 		</div>

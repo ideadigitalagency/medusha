@@ -2,14 +2,18 @@
 
 	<section class="main-first-screen main-about_animate-left main-first-screen_padd">
 
+		<div class="mob-bg-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/main-block-img.jpg" alt="">
+		</div>
 		<div class="container menu-animation-fs-left">
 			<div class="row no-gutters">
-				<div class="col-8 ">
+				
+				<div class="col-lg-8 col-12">
 					<div class="first-screen-wrp first-screen-wrp_padd">
 
 						<div class="first-screen__eko-text first-screen__eko-text_padd menu-animation-fs-eko">Эко продукт</div>
 						<h1 class="first-screen__title first-screen__title_padd menu-animation-fs-title">ОРГАНИЧЕСКИЙ МЕД УПАКОВАННЫЙ ПРИРОДОЙ</h1>
-						<div class="first-screen__text first-screen__text_padd menu-animation-fs-text">
+						<div class="first-screen__text first-screen__text_main first-screen__text_padd menu-animation-fs-text">
 							<?php dynamic_sidebar( 'Главная текст' ); ?>
 						</div>
 						<div class="first-screen__btn first-screen__btn_padd main__btn menu-animation-fs-button" data-toggle="modal" data-target="#leaveAppli">
@@ -45,8 +49,9 @@
 	<section id="next-block" class="main-slider-wrp main-slider-wrp_padd">
 
 		<div class="container">
+			<h2 class="main-slider-wrp__title main-slider-wrp__title_padd">Создадим форму для твоего бизнеса</h2>
 			<div class="row no-gutters">
-				<div class="col-6 main-slider-left">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 main-slider-left">
 					<div class="main-slider__decore">
 						<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/decorate-2.png" alt="">
 					</div>
@@ -74,7 +79,7 @@
 
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 					<div class="main-slider-images">
 
 						<div class="images-item images-item-r-1 images-item_one">
@@ -113,7 +118,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/decore-4.png" alt="">
 					</div>
 					<div class="main-slider-images__decore-two">
-							<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/decore-5.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/decore-5.png" alt="">
 					</div>
 
 				</div>
@@ -121,7 +126,8 @@
 		</div>
 
 		<div class="main-slider__bg-left"></div>
-		<div class="main-slider__bg-right"></div>
+		<!-- <div class="main-slider__bg-right"></div> -->
+		<div class="main-slider__bg-bottom"></div>
 
 	</section>
 
@@ -129,7 +135,7 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-xl-6 col-lg-6 col-md-12">
 					<div class="product-item product-left product-item_padd">
 
 						<img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/main-honey.jpg" alt="">
@@ -163,7 +169,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-xl-6 col-lg-6 col-md-12">
 
 						<div class="product-item product-right">
 
@@ -211,23 +217,23 @@
 	</section>
 
 	<section class="logo-slider logo-slider_padd">
-	<?php $pc = new WP_Query('cat=16&orderby=date&posts_per_page=1000'); ?>
-		<?php while ($pc->have_posts()) : $pc->the_post(); ?>
-		<?php
-                       $images = $dynamic_featured_image -> get_featured_images();
-                       if( $images ) {
-                           foreach ( $images as $key => $image ) {
-                               $class = ( $key !== count( $images ) -1 ) ? " class='image-block'" : " class='image-block active'";          
-                               $title = $dynamic_featured_image -> get_image_title($image['full']);
-                               ?>
-                                   <div <?php echo $class ?>>
-                                       <img src="<?php echo $image['full']; ?>" alt="picture">
-                                   </div>
-                               <?php
-                           }
-                       }
-                   ?>
-	<?php endwhile; ?> 
+		<?php $pc = new WP_Query('cat=16&orderby=date&posts_per_page=1000'); ?>
+			<?php while ($pc->have_posts()) : $pc->the_post(); ?>
+			<?php
+						$images = $dynamic_featured_image -> get_featured_images();
+						if( $images ) {
+							foreach ( $images as $key => $image ) {
+								$class = ( $key !== count( $images ) -1 ) ? " class='image-block'" : " class='image-block active'";          
+								$title = $dynamic_featured_image -> get_image_title($image['full']);
+								?>
+									<div <?php echo $class ?>>
+										<img src="<?php echo $image['full']; ?>" alt="picture">
+									</div>
+								<?php
+							}
+						}
+					?>
+		<?php endwhile; ?> 
 	
 	
 		<!-- <img src="<?php echo get_template_directory_uri(); ?>/build/images/main-page/l-1.png" alt="">
@@ -248,26 +254,26 @@
 
 	<section class="instagramm instagramm_padd">
 		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-lg-4 align-left">
-					<?php dynamic_sidebar( 'Instagram' ); ?>
-				</div>
-				<div class="col-lg-4">
-					<div class="instagramm-text instagramm-text_padd">
-						<div class="instagramm-text__title instagramm-text__title_padd">Instagram</div>
-						<div class="instagramm-text__descr">
-								Подписывайтесь на блог <span>Medusha</span> в Instagram! Там вас ждет множество пополняющихся тематических подборок, информация о свежих постах, последние новости и красивые снимки.
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 align-right">
-					<div class="instagram2">
-						<?php dynamic_sidebar( 'Instagram2' ); ?>
-					</div>
-			
-				</div>
-			</div>
-		</div>
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-4  align-left inst_mob">
+                    <?php dynamic_sidebar( 'Instagram' ); ?>
+                </div>
+                <div class="col-lg-4 col-md-4 ">
+                    <div class="instagramm-text instagramm-text_padd">
+                        <div class="instagramm-text__title instagramm-text__title_padd">Instagram</div>
+                        <div class="instagramm-text__descr">
+                                Подписывайтесь на блог <span>Medusha</span> в Instagram! Там вас ждет множество пополняющихся тематических подборок, информация о свежих постах, последние новости и красивые снимки.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4  align-right">
+                    <div class="instagram2">
+                        <?php dynamic_sidebar( 'Instagram2' ); ?>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
 	</section>
 
 	<section class="main-form main-form_padd">
