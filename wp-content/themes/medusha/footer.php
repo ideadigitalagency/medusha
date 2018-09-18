@@ -85,14 +85,14 @@
 
 			<div class="basket-btn-wrp basket-btn-wrp_width basket-btn-wrp_width_padd">
 				<div class="row no-gutters">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6 col-12">
 						<div class="basket-btn-wrp-item ">
 							<div class="basket-btn basket-btn_padd">
 								Продолжить покупку
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 align-right">
+					<div class="col-lg-6 col-md-6 col-12 align-right">
 						<div class="basket-btn-wrp-item">
 							<div class="basket-btn basket-btn_padd">
 								очистить корзину

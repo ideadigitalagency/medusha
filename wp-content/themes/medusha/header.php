@@ -98,7 +98,7 @@
 						</li>
 						<li><a href="#">О нас</a></li>
 						<li><a href="<?php echo get_category_link(17); ?>">Блог</a></li>
-						<li><a href="<?php echo get_category_link(20); ?>">Товар</a></li>
+						<!-- <li><a href="<?php echo get_category_link(20); ?>">Товар</a></li> -->
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>

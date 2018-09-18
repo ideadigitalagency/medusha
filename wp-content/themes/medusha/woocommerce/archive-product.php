@@ -184,19 +184,19 @@ get_header(); ?>
             <div class="your-kit__title your-kit__title_padd">Собери набор на свой вкус</div>
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                     <div class="your-kit-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-1.jpg" alt="">
                         <div class="your-kit-item__name">Мед со свечкой </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                     <div class="your-kit-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-2.jpg" alt="">
                         <div class="your-kit-item__name">Мед с чашкой</div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mob-hidd">
                     <div class="your-kit-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/build/images/category-page/set-1.jpg" alt="">
                         <div class="your-kit-item__name">Твои пожелание </div>
