@@ -145,7 +145,7 @@
 						<div class="product-item__choise-wrp">
 								<div class="product-item__choise">
 										<div class="product-item__choise-bg"></div>
-										<a href="#" class="product-item__choise-title-wrp">
+										<a href="<?php echo get_category_link(20); ?>" class="product-item__choise-title-wrp">
 											<span class="product-item__choise-title product-item__choise-title_padd">
 												<span>Корпоративным клиентам</span>		
 											</span>
@@ -153,7 +153,7 @@
 								</div>
 								<div class="product-item__choise-two">
 										<div class="product-item__choise-bg"></div>
-										<a href="#" class="product-item__choise-title-wrp">
+										<a href="<?php echo get_category_link(19); ?>" class="product-item__choise-title-wrp">
 											<span class="product-item__choise-title product-item__choise-title_padd">
 												<span>Частным клиентам</span>
 											</span>
@@ -180,7 +180,7 @@
 							<div class="product-item__choise-wrp">
 									<div class="product-item__choise">
 											<div class="product-item__choise-bg"></div>
-											<a href="#" class="product-item__choise-title-wrp">
+											<a href="<?php echo get_category_link(27); ?>" class="product-item__choise-title-wrp">
 												<span class="product-item__choise-title product-item__choise-title_padd">
 													<span>Корпоративным клиентам</span>		
 												</span>
@@ -188,7 +188,7 @@
 									</div>
 									<div class="product-item__choise-two">
 											<div class="product-item__choise-bg"></div>
-											<a href="#" class="product-item__choise-title-wrp">
+											<a href="<?php echo get_category_link(26); ?>" class="product-item__choise-title-wrp">
 												<span class="product-item__choise-title product-item__choise-title_padd">
 													<span>Частным клиентам</span>
 												</span>
