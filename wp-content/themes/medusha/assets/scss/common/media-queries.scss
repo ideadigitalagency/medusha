@@ -223,7 +223,7 @@
         object-fit: cover;
     }
     .main-img-decore {
-        right: 32%;
+        right: 26%;
         bottom: 100px;
     }
     .form__decore-bg-honey {
@@ -1646,3 +1646,144 @@
 
 
 // Pop-up
+
+// Basket
+
+@media (max-width:768px){
+    .basket-table-body__item_padd {
+        padding: 21px 39px 15px 16px;
+        margin-bottom: 30px;
+    }
+    .quantity-block {
+        padding-left: 20px;
+    }
+    .basket-table-head__item_padd-l {
+        padding-left: 0;
+    }
+    .basket-table-head__item {
+        font-size: 16px;
+    }
+    .basket-table__name {
+        line-height: 22px;
+        font-size: 15px;
+    }
+    .basket-table__price-for-one {
+        font-size: 15px;
+    }
+    .basket-table__price-for-one_small {
+        font-size: 12px;
+    }
+    .basket-table__price-text {
+        font-size: 12px;
+    }
+    .basket-table__price-text_big {
+        font-size: 15px;
+    }
+    .basket-table__number-item .quantity-num {
+        width: 40px;
+        background-color: transparent;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .basket-table__amound, .basket-table__taste {
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .basket-table__price-item_s {
+        font-size: 13px;
+    }
+    .basket-table__price-item {
+        line-height: 34px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .basket-table__number-item .quantity-arrow-minus {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width:480px){
+    .basket-table-head__padd {
+        display: none;
+    }
+    .basket-title__name {
+        line-height: 28px;
+        font-size: 18px;
+    }
+    .basket-title__name {
+        vertical-align: top;
+    }
+    .basket-title__number {
+        line-height: 18px;
+        font-size: 13px;
+        width: 230px;
+        vertical-align: bottom;
+    }
+    .basket-table-body__item{
+        position: relative;
+    }
+    .table-body__item{
+        position: absolute;
+        right: 0;
+        width: 50%;
+    }
+    .table-body__item_one {
+        top: 18%;
+    }
+    .table-body__item_two {
+        top: 41%;
+    }
+    .table-body__item_three {
+        top: 63%;
+    }
+    .table-body__item_four {
+        bottom: 13%;
+    }
+    
+    .quantity-block {
+        padding-left: 0;
+    }
+    .basket-table-head__item_padd-l {
+        padding-left: 0;
+    }
+    .table-body__item.align-right{
+        text-align: center;
+    }
+    .body__item_padd {
+        padding: 40px 39px 45px 16px;
+        margin-bottom: 43px;
+    }
+    
+    
+    .basket-table-body__item_padd {
+        padding: 44px 39px 44px 16px;
+    }
+    .basket-btn {
+        font-size: 12px;
+    }
+    .mob-center{
+        text-align: center;
+    }
+    .basket-order__title {
+        line-height: 33px;
+        font-size: 25px;
+    }
+    .basket-order_padd {
+        padding-bottom: 100px;
+    }
+    .mob-hidden{
+        display: none;
+    }
+    .basket-order__price {
+        font-family: Georgia-Bold;
+        line-height: 38px;
+        font-size: 35px;
+        text-align: center;
+        color: #333;
+    }
+    .basket-order__price_s {
+        font-size: 20px;
+    }
+}
+
+// Basket
