@@ -8,14 +8,7 @@
     position: relative;
     
   }
-  .copy-right{
-    font-family: Georgia-Regular;
-    line-height: 18px;
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    color: #3C2515;
-    text-transform: uppercase;
-  }
+  
   .footer-number , .footer-number:hover{
     font-family: Georgia-Regular;
     line-height: 15px;
@@ -32,6 +25,15 @@
   .social a{
     display: inline-block;
     margin-left: 25px;
+  }
+
+  .copy-right{
+    font-family: Georgia-Regular;
+    line-height: 18px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: #3C2515;
+    text-transform: uppercase;
   }
   .idea{
     font-family: Georgia-Regular;
