@@ -1,0 +1,117 @@
+.blog{
+    position: relative;
+}
+.blog_bg{
+    background: #FFFDEE;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 935px;
+    z-index: -1;
+}
+.blog_padd{
+    padding-top: 223px;
+    padding-bottom: 263px;
+}
+.blog-item_padd{
+    padding-bottom: 50px;
+}
+.blog .blog-item__img-wrp{
+    border-radius: 0;
+}
+.blog-item__title_big{
+    display: block;
+    font-family: PFDin-Bold;
+    line-height: normal;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.blog-item__title_big_padd{
+    padding-bottom: 59px;
+}
+.blog-item__text_big{
+    font-family: Georgia-Regular;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: #8D8D8D;
+    padding: 0 48px 37px;
+}
+.blog-item__text_big-padd{
+    padding-bottom: 48px;
+}
+.blog-item_padd_big{
+    margin-bottom: 47px;
+}
+.blog .blog-item__text_padd {
+    padding-bottom: 10px;
+}
+.pagination{
+    position: relative;
+    padding-top: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.page-numbers{
+    font-family: PFDin-Regular;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #B6B6B6;
+    padding: 0 30px;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+}
+.page-numbers.current{
+    font-family: PFDin-Regular;
+    line-height: 33px;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #F7AF44;
+}
+.page-numbers:hover{
+    font-family: PFDin-Regular;
+    line-height: 33px;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #F7AF44;
+}
+.page-numbers.next , .page-numbers.prev{
+    position: absolute;
+    font-family: Georgia-Regular;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #333333;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+} 
+.page-numbers.next span, 
+.page-numbers.prev span{
+    padding-top: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-numbers.prev{
+    left: 0;
+}
+.page-numbers.next{
+    right: 0;
+}
+.page-numbers.prev img{
+    padding-right: 12px;
+}
+.page-numbers.next img{
+    padding-left: 12px;
+}
+.blog-item__img_big{
+    object-fit: cover;
+    width: 540px;
+    height: 712px;    
+}
